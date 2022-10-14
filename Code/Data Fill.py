@@ -15,6 +15,7 @@ csv_data_mean[['tavg','tmin','tmax']]=csv_data_mean[['tavg','tmin','tmax']].fill
 csv_data_mean[['prcp']]=csv_data_mean[['prcp']].fillna(0)
 print(csv_data_mean.head())
 
+
 print("Cleaned by median")
 csv_data_median[['tavg','tmin','tmax']]=csv_data_median[['tavg','tmin','tmax']].fillna(csv_data_median.median())
 csv_data_median[['prcp']]=csv_data_median[['prcp']].fillna(0)
